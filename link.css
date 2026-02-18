@@ -1,0 +1,174 @@
+/* Default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ccc;
+    max-width: 60%;
+    margin: auto;
+}
+
+/* Stylings for whole site */
+button {
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-self: center;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+    padding-top: 8px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* styling for navbar */
+.nav-logo {
+    background-color: rgb(30, 124, 30);
+    padding: 20px;
+}
+
+.navbar {
+    background-color: #ffffff60;
+}
+
+.nav-item {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+.navlink {
+    color: green;
+}
+
+/* styling hero-container */
+.hero-container {
+    margin: 10px;
+    padding-left: 250px;
+}
+
+.hero-container p {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.hero-para1 a {
+    color: green;
+    padding: 5px;
+}
+
+.hero-para2 a {
+    color: red;
+}
+
+.hero-container a {
+    font-weight: 500;
+    font-size: 15px;
+}
+
+/* styling for music-list */
+.music-container {
+    background-color: white;
+    padding: 10px;
+}
+
+.music-cover audio {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.song-description {
+    line-height: 1.5;
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+.see {
+    background-color: red;
+    color: white;
+    padding: 5px 20px;
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-right: 360px;
+    margin-left: 300px;
+}
+
+.music-list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 10px 2px;
+}
+
+.music-list p {
+    margin-top: 20px;
+}
+
+.music-list p a {
+    color: black;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+/* footer styling */
+footer {
+    margin: 0 auto;
+    background-color: rgb(7, 2, 2);
+    padding: 20px;
+    color: white;
+}
+
+.footer-logo {
+    display: flex;
+    justify-self: center;
+    flex-wrap: wrap;
+}
+
+.footer-items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.footer-container h3 {
+    color: green;
+}
+
+.item-2 {
+    margin-right: 250px;
+}
+
+.category {
+    margin-bottom: 10px;
+}
+
+.cat-list,
+.info-list {
+    margin-top: 10px;
+}
+
+.copyright {
+    justify-items: center;
+}
+
+.copyright p {
+    padding: 5px;
+}
