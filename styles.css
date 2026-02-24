@@ -8,8 +8,9 @@
 
 body {
     background-color: #ccc;
-    max-width: 60%;
+    width: min(100%, 960px);
     margin: 0 auto;
+    padding: 0 12px;
 }
 
 /* Stylings for whole site */
@@ -28,6 +29,11 @@ a {
     background-color: rgb(30, 124, 30);
     padding: 20px;
 }
+.nav-logo img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 .navbar {
     background-color: #ffffff60;
 }
@@ -45,13 +51,30 @@ a {
 
 /* styling hero-container */
 .hero-container {
-    margin:10px;
-    padding-left: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    padding: 0;
 }
 .hero-flex {
     display: flex;
-    /* justify-items: center; */
+    align-items: center;
+    gap: 10px;
     flex-wrap: wrap;
+}
+.hero-flex-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.dropdown-menu {
+    color: red;
+    width: 80px;
+    border: 2px solid red;
+    height: 30px;
 }
 .hero-container p{
     padding: 5px;
@@ -69,14 +92,18 @@ a {
     color: white;
     padding: 8px;
     font-size: 20px;
-    margin-top: 60px;
-    margin-right: 320px;
-    margin-left: 40px;
+    margin: 50px 0 0;
+    display: inline-block;
 }
 
 .hero-container a {
     font-weight: 500;
     font-size: 15px;
+}
+.hero-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 /* styling for music-list */
@@ -91,7 +118,7 @@ a {
     padding: 10px 2px;
 }
 .music-list p {
-    margin-top: 20px;
+    margin-top: 8px;
 }
 .music-list p a {
     color: black;
@@ -113,9 +140,11 @@ footer {
 }
 
 .footer-items {
+    width: min(80%, 100%);
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 350px;
     padding: 10px;
 }
 
@@ -124,7 +153,7 @@ footer {
 }
 
 .item-2 {
-    margin-right: 250px;
+    margin-right: 0;
 }
 
 .category {
@@ -140,4 +169,26 @@ footer {
 }
 .copyright p {
     padding: 5px;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 0 8px;
+    }
+
+    .nav-item {
+        gap: 12px;
+        padding-top: 16px;
+    }
+
+    .music-list {
+        align-items: center;
+        gap: 14px;
+    }
+
+    .music-list img {
+        width: 100px;
+        height: 70px;
+        object-fit: cover;
+    }
 }
